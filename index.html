@@ -1,0 +1,51 @@
+﻿<!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SmartTravel-Log In</title>
+        <link rel="stylesheet" type="text/css" href="css/index_style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card card-container">
+                <img id="profile-img" class="profile-img-card" src="img/avatar.png" />
+                <p id="profile-name" class="profile-name-card"></p>
+                <form class="form-signin"  method="post" onsubmit="signIn();">
+                    <span id="reauth-email" class="reauth-email"></span>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <div id="remember" class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" id="sigin"
+                    
+                    >Sign in</button>
+                </form><!-- /form -->
+                <a href="#" class="forgot-password">
+                    Forgot the password?
+                </a>
+            </div><!-- /card-container -->
+        </div><!-- /container -->
+        
+        <script src="https://www.gstatic.com/firebasejs/4.1.5/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyC1ezeYR8NfMhwhPvmylJL9Z0BI4W-_1Xw",
+            authDomain: "smarttravel-ba2e5.firebaseapp.com",
+            databaseURL: "https://smarttravel-ba2e5.firebaseio.com",
+            projectId: "smarttravel-ba2e5",
+            storageBucket: "smarttravel-ba2e5.appspot.com",
+            messagingSenderId: "747498772395"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <!--must be included after firebase script-->
+        <script type="text/javascript" src="js/index_js.js"></script>
+    </body>
+</html>

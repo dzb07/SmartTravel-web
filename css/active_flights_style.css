@@ -1,0 +1,53 @@
+﻿.airlines{
+	opacity: 0.7;
+	display: inline-block;
+	margin-left: 13px;
+	margin-bottom: 15px;
+	width: 300px;
+
+}
+a{
+	text-decoration: none;
+
+	text-shadow:0px 0px 0px #fff18a;
+	color: white;
+	height: 210px;
+	width: 300px;
+	background-image: url("../img/active_flight_02.jpg");
+	background-size: 400px;
+	/*display vertically inside div*/
+	display: table-cell;
+	vertical-align: middle;
+	/*end of display vertically*/
+	font-size: 30px;
+	text-align: center;
+	border: 2px solid none;
+	border-radius: 24px;
+}
+h3{
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+img{
+	width: 300px;
+	margin-left: 36%;
+	
+}
+body{
+	background-image: url("../img/background_admin.jpg");
+	background-size: cover;
+}
+.buttons{
+	margin-left: 21px;
+}
+#go_back{
+	margin-left: 44%;
+	background-color: transparent;
+	border-radius: 22px;
+	font-family: Arial;
+	color: #f2f2f2;
+	font-size: 18px;
+	padding: 6px 20px 6px 20px;
+	text-decoration: none;
+	font-weight: bold;
+}

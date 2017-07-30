@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/update_flight_style.css">
+
+</head>
+<body>
+  <h1><b>Active Flights</b></h1>
+  <img src="img/logo.png" id="logo">
+  <div id="content">
+
+    <div  id="data"> </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.1.5/firebase.js"></script>
+  <script>
+            // Initialize Firebase
+            var config = {
+              apiKey: "AIzaSyC1ezeYR8NfMhwhPvmylJL9Z0BI4W-_1Xw",
+              authDomain: "smarttravel-ba2e5.firebaseapp.com",
+              databaseURL: "https://smarttravel-ba2e5.firebaseio.com",
+              projectId: "smarttravel-ba2e5",
+              storageBucket: "smarttravel-ba2e5.appspot.com",
+              messagingSenderId: "747498772395"
+            };
+            firebase.initializeApp(config);
+  </script>
+          <!--must be included after firebase script-->
+  <script type="text/javascript" src="js/update_flight.js"></script>
+</body>
+</html>

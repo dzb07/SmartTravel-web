@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/active_flights_style.css">
+	
+</head>
+<body>
+	<div id="header">
+		<img src="img/logo.png" id="logo"><br>
+		<input type="button" value="Go Back" id="go_back" onclick="" />
+		<hr>
+	</div>
+	<div id="content">
+		<div class="airlines">
+			<a href="#" class="airlines">Turkish Airlines</a>
+			<div class="buttons">
+				<button class="btn btn-success" onclick="addFlight()">ADD FLIGHT</button>
+				<button class="btn btn-danger">UPDATE OR DELETE</button>
+			</div>
+		</div>
+		<div class="airlines">
+			<a href="#" class="airlines">Austrian Airlines</a>
+			<div class="buttons">
+				<button class="btn btn-success" onclick="addFlight()">ADD FLIGHT</button>
+				<button class="btn btn-danger">UPDATE OR DELETE</button>
+			</div>
+		</div>
+		<div class="airlines">
+			<a href="#" class="airlines">GlobeAir</a>
+			<div class="buttons">
+				<button class="btn btn-success" onclick="addFlight()">ADD FLIGHT</button>
+				<button class="btn btn-danger">UPDATE OR DELETE</button>
+			</div>
+		</div>
+		<div class="airlines">
+			<a href="#" class="airlines">Eurowings</a>
+			<div class="buttons">
+				<button class="btn btn-success" onclick="addFlight()">ADD FLIGHT</button>
+				<button class="btn btn-danger">UPDATE OR DELETE</button>
+			</div>
+		</div>
+		<div class="airlines">
+			<a href="#" class="airlines">United Airlines</a>
+			<div class="buttons">
+				<button class="btn btn-success" onclick="addFlight()">ADD FLIGHT</button>
+				<button class="btn btn-danger">UPDATE OR DELETE</button>
+			</div>
+		</div>
+		<div class="airlines">
+			<a href="#" class="airlines">Air Canada Express</a>
+			<div class="buttons">
+				<button class="btn btn-success" onclick="addFlight()">ADD FLIGHT</button>
+				<button class="btn btn-danger">UPDATE OR DELETE</button>
+			</div>
+		</div>
+		<div class="airlines">
+			<a href="#" class="airlines">American Airlines</a>
+			<div class="buttons">
+				<button class="btn btn-success" onclick="addFlight()">ADD FLIGHT</button>
+				<button class="btn btn-danger">UPDATE OR DELETE</button>
+			</div>
+		</div>
+		<div class="airlines">
+			<a href="#" class="airlines">JetBlue Airways</a>
+			<div class="buttons">
+				<button class="btn btn-success" onclick="addFlight()">ADD FLIGHT</button>
+				<button class="btn btn-danger">UPDATE OR DELETE</button>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/4.1.5/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyC1ezeYR8NfMhwhPvmylJL9Z0BI4W-_1Xw",
+            authDomain: "smarttravel-ba2e5.firebaseapp.com",
+            databaseURL: "https://smarttravel-ba2e5.firebaseio.com",
+            projectId: "smarttravel-ba2e5",
+            storageBucket: "smarttravel-ba2e5.appspot.com",
+            messagingSenderId: "747498772395"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <!--must be included after firebase script-->
+        <script type="text/javascript" src="js/active_flights.js"></script>
+</body>
+</html>

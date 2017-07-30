@@ -1,0 +1,26 @@
+﻿#data{
+	display: inline-block;
+	text-align: left;
+}
+form{
+	display: inline-block;
+}
+#content{
+	margin-left: 10%;
+}
+h1{
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: white;
+	opacity: 0.5;
+
+}
+#logo{
+	margin-left: 450px;
+	width: 300px;
+}
+body{
+	background-image: url("../img/update_background.jpg");
+	background-size: cover;
+		
+}

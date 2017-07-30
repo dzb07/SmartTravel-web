@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADD Flight</title>
+	<link rel="stylesheet" type="text/css" href="css/add_flight_style.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<form id="edit-form" class="form-horizontal" method="post">
+		<input class="company" type="checkbox"
+		 name="company" value="Turkish Airlines">Turkish Airlines<br>
+		<input class="company" type="checkbox" 
+		name="company" value="Austrian Airlines" >Austrian Airlines<br>
+		<input class="company" type="checkbox" 
+		name="company" value="GlobeAir">GlobeAir<br>
+		<input class="company" type="checkbox" 
+		name="company" value="Eurowings" >Eurowings<br>
+		<input class="company" type="checkbox" 
+		name="company" value="United Airlines" >United Airlines<br>
+		<input class="company" type="checkbox" 
+		name="company" value="Air Canada Express" >Air Canada Express<br>
+		<input class="company" type="checkbox" 
+		name="company" value="American Airlines" >American Airlines<br>
+		<input class="company" type="checkbox" 
+		name="company" value="JetBlue Airways" >JetBlue Airways<br>
+			Departure place:
+			<input type="text" name="dep_place01" id="dep_place"><br>
+			Destination place:
+			<input type="text" name="dest_place01" id="dest_place"><br>
+			Departure date:
+			<input type="date" name="dep_date01" id="dep_date"><br>
+			Arrival date:
+			<input type="date" name="arr_date01" id="arr_date"><br>
+			Departure time:
+			<input type="time" name="dep_time01" id="dep_time"><br>
+			Arrival time:
+			<input type="time" name="arr_time01" id="arr_time"><br>
+			Seats per class: <br>
+			Economy: <input type="Number" name="ec_num01" id="ec_num"><br>
+			First class: <input type="Number" name="f_num01" id="f_num"><br>
+			Business class: <input type="Number" name="b_num01" id="b_num"><br>
+			Photo of the destination:
+			<input type="text" name="urlImage" id="urlImage"><br>
+			Price:
+			<input type="text" name="price01" id="price">
+			<button id="dodaj" type="submit" onclick="submitClick()" name="dodaj" class="btn btn-success" style="margin-top:10%;"><b>Dodaj sadrzaj</b></button>
+	</form>
+		<script src="https://www.gstatic.com/firebasejs/4.1.5/firebase.js"></script>
+	        <script>
+	          // Initialize Firebase
+	          var config = {
+	            apiKey: "AIzaSyC1ezeYR8NfMhwhPvmylJL9Z0BI4W-_1Xw",
+	            authDomain: "smarttravel-ba2e5.firebaseapp.com",
+	            databaseURL: "https://smarttravel-ba2e5.firebaseio.com",
+	            projectId: "smarttravel-ba2e5",
+	            storageBucket: "smarttravel-ba2e5.appspot.com",
+	            messagingSenderId: "747498772395"
+	          };
+	          firebase.initializeApp(config);
+	        </script>
+	        <!--must be included after firebase script-->
+	        <script type="text/javascript" src="js/add_flight.js"></script>
+
+</body>
+</html>
