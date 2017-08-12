@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADD New Room</title>
+	<link rel="stylesheet" type="text/css" href="css/add_room.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+	
+	<form id="edit-form" class="form-horizontal" method="post">
+	<h2 class="heading">Add a New Room</h2>
+	<img src="img/logo.png" style="width: 210px;height: 100px; margin-top: -180px; margin-left: 800px;">
+  <br>
+	
+  <b>Property ID:</b>
+          <input type="text" name="property_id01" id="property_id" placeholder="Property id never changes" class="controls"><br>
+  <b>Property Name:</b>
+          <input type="text" name="property_name01" id="property_name" class="controls"><br>
+         
+	<b>Apartment Code:</b>
+		      <input type="text" name="ap_code01" id="ap_code" class="controls"><br>
+          
+		
+			<b>Host city:</b>
+			<input type="text" name="host_city01" id="host_city" class="controls"><br>
+			<b>Host street:</b>
+			<input type="text" name="host_street01" id="host_street" class="controls"><br>
+			<div class="grid">
+        		<div class="col-2-2">
+          			<div class="controls">
+	           			<b>Number of rooms:</b>
+						<input type="Number" name="num_of_rooms01" id="num_of_rooms">
+          			</div>          
+        		</div>
+        		<div class="col-2-2">
+          			<div class="controls">
+            			<b>Max num of people:</b>
+						<input type="Number" name="max_num_of_people01" id="max_num_of_people"><br>
+          			</div>          
+        		</div>
+      		</div>
+
+
+      		<div class="grid">
+        		<div class="col-2-2">
+          			<div class="controls">
+	           			<b>Type of beds:</b>
+						<input type="text" name="type_of_beds01" id="type_of_beds">
+          			</div>          
+        		</div>
+        		<div class="col-2-2">
+          			<div class="controls">
+            			<b>Arrival time:</b>
+						<input type="text" name="arr_time01" id="arr_time">
+          			</div>          
+        		</div>
+      		</div>
+
+
+			<div class="grid">
+			<b>More details about apartment:</b><br>
+        		<div class="col-1-3">
+          			<div class="controls">
+	           			<b>Bathroom:</b><input type="radio" name="bathroom" id="bathroom_yes" value="yes" > Yes
+                  <input type="radio" name="bathroom" id="bathroom_no" value="no" > No<br>
+          			</div>          
+        		</div>
+        		<div class="col-1-3">
+          			<div class="controls">
+                  <b>Kitchen:</b><input type="radio" name="kitchen" id="kitchen_yes" value="yes" > Yes
+                  <input type="radio" name="kitchen" value="no" > No<br>
+                </div>          
+        		</div>
+        		<div class="col-1-3">
+          			<div class="controls">
+                  <b>WiFi:</b><input type="radio" name="wifi" id="wifi_yes" value="yes" > Yes
+                  <input type="radio" name="wifi" value="no" > No<br>
+                </div>           
+        		</div>
+      		</div>
+
+          <div class="grid">
+            <div class="col-1-3">
+                <div class="controls">
+                  <b>Breakfast included:</b><input type="radio" name="breakfast" id="breakfast_yes" value="yes" > Yes
+                  <input type="radio" name="breakfast" value="no" > No<br>
+                </div>          
+            </div>
+            <div class="col-1-3">
+                <div class="controls">
+                  <b>Parking lot:</b><input type="radio" name="parking" id="parking_yes" value="yes" > Yes
+                  <input type="radio" name="parking" value="no" > No<br>
+                </div>          
+            </div>
+            <div class="col-1-3">
+                <div class="controls">
+                  <b>Pets allowed:</b><input type="radio" name="pets" id="pets_yes" value="yes" > Yes
+                  <input type="radio" name="pets" value="no" > No<br>
+                </div>           
+            </div>
+          </div>
+
+
+      		<div class="grid">
+        		
+        		<div class="col-1-3">
+          			<div class="controls">
+            			<b>Price per Night:</b>
+						<input type="text" name="price01" id="price">
+          			</div>          
+        		</div>
+      		</div>
+      		<p>Note: Price is stated as a basic  amount of payment in euro currency.
+      		Price will be presented to customers according to the currency and type of room they choose. </p>
+
+
+
+
+          <h5 style="background-color: rgba(90,90,110,0.5); display: inline;padding: 5px; 
+          margin-bottom:14px;">Photos of the Apartment:</h5>
+                <div class="controls">
+                  <b>Photo 01:</b>
+                  <input type="text" name="urlImage01" id="urlImage1">
+                </div>    
+                <div class="controls">
+                  <b>Photo 02:</b>
+                  <input type="text" name="urlImage02" id="urlImage2">
+                </div> 
+                <div class="controls">
+                  <b>Photo 03:</b>
+                  <input type="text" name="urlImage03" id="urlImage3">
+                </div> 
+                <div class="controls">
+                  <b>Photo 04:</b>
+                  <input type="text" name="urlImage04" id="urlImage4">
+                </div> 
+                <div class="controls">
+                  <b>Photo 05:</b>
+                  <input type="text" name="urlImage05" id="urlImage5">
+                </div>       
+                <div class="controls">
+                  <b>Photo 06:</b>
+                  <input type="text" name="urlImage06" id="urlImage6">
+                </div> 
+                <div class="controls">
+                  <b>Photo 07:</b>
+                  <input type="text" name="urlImage07" id="urlImage7">
+                </div> 
+            </div>
+			<button id="dodaj" type="submit" onclick="submitClick()" name="dodaj" class="btn btn-success" style="margin-top:1%;width: 150px; height: 50px;"><b>Add Room</b></button>
+	</form>
+	
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDgf7nWig_cith8mGr4TINe3O5MQBcwHRI",
+      authDomain: "smjestise-106ea.firebaseapp.com",
+      databaseURL: "https://smjestise-106ea.firebaseio.com",
+      projectId: "smjestise-106ea",
+      storageBucket: "smjestise-106ea.appspot.com",
+      messagingSenderId: "69112820417"
+    };
+    firebase.initializeApp(config);
+  </script>
+	        <!--must be included after firebase script-->
+	        <script type="text/javascript" src="js/add_rooms.js"></script>
+
+</body>
+</html>

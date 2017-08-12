@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+     body{
+      background-color: #e6f2ff;
+     }
+        #room{
+        width: 100%;
+        height: 500px;
+        border-radius: 15px;
+
+
+      }
+      .col-1-2{
+        width: 50%;
+        float: left;
+      }
+
+      #b_add,#b_rem{
+        width: 100%;
+        height: 50px;
+        border-radius: 15px;
+      }
+      #grid{
+        width: 85%;
+        display: block;
+        margin: auto;
+      }
+  </style>
+     
+
+    <!-- Custom CSS -->
+    
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div id="grid">
+  <img src="img/room.jpg" id="room">
+  <div class="col-1-2">
+    <button class="btn btn-success" id="b_add" onclick="addRoom();">Add New Rooms</button>
+  </div>
+  <div class="col-1-2">
+    <button class="btn btn-danger" id="b_rem" onclick="remRoom();">Update or Remove Rooms From Offer</button>
+  </div>
+    
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDgf7nWig_cith8mGr4TINe3O5MQBcwHRI",
+    authDomain: "smjestise-106ea.firebaseapp.com",
+    databaseURL: "https://smjestise-106ea.firebaseio.com",
+    projectId: "smjestise-106ea",
+    storageBucket: "smjestise-106ea.appspot.com",
+    messagingSenderId: "69112820417"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="js/current_rooms.js"></script>
+</body>
+</html>
